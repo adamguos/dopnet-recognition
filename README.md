@@ -1,6 +1,6 @@
 # A manifold learning approach for gesture recognition from micro-Doppler radar measurements
 
-E. S. Mason, H. N. Mhaskar, A. Guo
+E. S. Mason, H. N. Mhaskar, A. Guo (2022)
 
 [doi.org/10.1016/j.neunet.2022.04.024](https://doi.org/10.1016/j.neunet.2022.04.024)
 
