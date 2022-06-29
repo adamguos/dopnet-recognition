@@ -41,7 +41,7 @@ For reference, the experiments were run on Arch Linux (kernel 5.x) using an AMD 
 inference. The experiments may need modifications to run on less than 32GB of memory or without an
 NVIDIA GPU.
 
-## File rundown
+## File rundown (outdated)
 
 - `src/manifold_svm.py`
     - Contains all the classification code. Classifiers inherit from `sklearn.SVM.SVC`, and only
