@@ -14,7 +14,9 @@ repository](https://github.com/UCLRadarGroup/DopNet/blob/master/data/Data_Downlo
 2. Install required Python libraries (e.g. in a Conda environment): `pip install -r
    requirements.txt`
 3. Install PyTorch
-3. Generate `.npy` files: `cd tests` and `python export_data.py`
+4. Generate `.npy` files: `python export_data.py`
+5. The `example_usage.py` script demonstrates how to import and preprocess the dataset as well as
+   run the models. The script itself can be run: `python example_usage.py`
 
 ## Experiments
 
