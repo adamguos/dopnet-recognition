@@ -1,5 +1,6 @@
 """
-Examples demonstrating how to import and preprocess the DopNet dataset, and how to fit and evaluate the models.
+Examples demonstrating how to import and preprocess the DopNet dataset, and how to fit and evaluate
+the models.
 """
 
 import numpy as np

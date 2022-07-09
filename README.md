@@ -41,7 +41,7 @@ For reference, the experiments were run on Arch Linux (kernel 5.x) using an AMD 
 inference. The experiments may need modifications to run on less than 32GB of memory or without an
 NVIDIA GPU.
 
-## File rundown (outdated)
+## File rundown
 
 - `src/manifold_svm.py`
     - Contains all the classification code. Classifiers inherit from `sklearn.SVM.SVC`, and only
@@ -50,16 +50,15 @@ NVIDIA GPU.
     - Contains a number of preprocessing classes designed to be used in `sklearn.Pipeline`
     - Only `Threshold` is used, which implements scaling to binary/[-1, 0] interval and Otsu/Yen
       thresholding
-- `tests/export_data.py`
+- `export_data.py`
     - Run this to read and export DopNet data
     - Put all the `Data_Per_PersonData....mat` files into `data/dopnet/`
 - `tests/dopnet.py`
-    - Contains functions for running tests
-    - As currently set up, run this file to execute 25 trials across 5 split sizes of Laplace
-      kernel, normalised data
-    - `test_split_sizes` is what we interface with to change the test being run
-    - Other functions are there to help plot graphs for the report, provide wrapper functions for
-      running/saving tests, etc.
-- `tests/logs/read_tests.py`
-    - Contains functions for quickly reading from the log files
-    - Run `read_tests.py` to get an overview of test results in chronological order
+    - Contains wrapper functions for import/exporting data and running trials
+    - Trials are outdated, mostly replaced by `tests/experiments.py`
+- `tests/experiments.py`
+    - Contains all experiments run for this paper with helper functions for exporting test results
+- `tests/models.py`
+    - Contains modeling code, repackaged from `src/manifold_svm.py` for ease of use in experiments
+- `tests/plotting.py`
+    - Contains helper code for plotting experimental results
